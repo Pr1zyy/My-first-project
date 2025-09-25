@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Readex Pro", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+.header {
+    background-color: rgb(255, 255, 255);
+    padding: 8px 0;
+    font-weight: medium;
+}
+.header-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-nav{
+    font-size: 14px;
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+.header-nav2{
+    font-size: 14px;
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+.header-nav__link{
+    color: black;
+}
+.header-nav__link2{
+    color: black;
+}
+.header-nav__link:hover{
+    color: rgb(44, 44, 44);
+    transition: 0.3s ease-in-out;
+}
+.header-nav__link2:hover{
+    color: rgb(44, 44, 44);
+    transition: 0.3s ease-in-out;
+}
+.get-started{
+    background-color: blue;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px; 
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.get-started:hover{
+    color: rgb(207, 207, 207);
+    transition: 0.3s ease-in-out;
+}
+.group {
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+.cally{
+    color: black;
+    font-weight: bold;
+}
+.cally:hover{
+    color: rgb(44, 44, 44);
+    transition: 0.3s ease-in-out;
+
