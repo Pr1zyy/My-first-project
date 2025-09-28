@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="first project" content="HTML, CSS, сайт, верстка, обучение">
-    <meta >
+    <meta>
     <title>W</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container header-flex">
@@ -21,10 +23,10 @@
             </div>
             <ul class="header-nav">
                 <li class="header-nav__item">
-                    <a href="#" class="header-nav__link">Individuals</a>
+                    <a href="#video" class="header-nav__link">Video</a>
                 </li>
                 <li class="header-nav__item">
-                    <a href="#" class="header-nav__link">Teams</a>
+                    <a href="#features" class="header-nav__link">Features</a>
                 </li>
                 <li class="header-nav__item">
                     <a href="#" class="header-nav__link">Enterprice</a>
@@ -33,8 +35,8 @@
                     <a href="#" class="header-nav__link">Product</a>
                 </li>
                 <li class="header-nav__item">
-                    <a href="#" class="header-nav__link">Pricing</a>
-                </li>                                                                
+                    <a href="#plan" class="header-nav__link">Plan</a>
+                </li>
             </ul>
             <ul class="header-buttons">
                 <li class="header-buttons__item2">
@@ -42,29 +44,33 @@
                 </li>
                 <li class="header-buttons__item2">
                     <a href="#" class="get-started">Get started</a>
-                </li>                
+                </li>
             </ul>
         </div>
     </header>
     <main>
-        <div class="alert">
+
+
+        <div class="alert" id="alert">
             <div class="alert-container alert-flex">
                 <div class="alert-text">
                     <span class="alert-text1">Hey⚡Announcing Routin Forms !</span>
                     <span class="alert-text2">Efficiently screen and automate how people planning with you.</span>
                 </div>
-            <a href="#" class="cross">
-                <img src="./img/cross.svg" alt="cross" width="52" height="40">
-            </a>
+                <button onclick="hideAlert()" class="cross">
+                    <img src="./img/cross.svg" alt="cross" width="52" height="40">
+                </button>
             </div>
         </div>
+
+
         <section class="hero">
             <div class="hero-container">
                 <div class="hero-block">
                     <div class="hero-bigtext">
                         <span class="hero-bigtext1">Easy</span>
                         <span class="hero-bigtext1">planning</span>
-                        <span class="hero-bigtext1">with <span class="hero-bigtext2">Cally</span></span> 
+                        <span class="hero-bigtext1">with <span class="hero-bigtext2">Cally</span></span>
                     </div>
                     <div class="hero-text">
                         <span class="hero-text1">Cally</span>
@@ -82,95 +88,436 @@
                 </div>
             </div>
         </section>
-        <div class="video">
-            <img src="./img/Video.png" alt="video" width="2027" height="1330">
-        </div>
-        <section class="features">
-            <div class="title">
-                <span class="title-text">Solution for thriving product </span>
-                <span class="title-text">Communities </span>
-            </div>
-            <div class="features-container features-flex">
-                <div class="card1">
-                    <img src="./img/card1.png" alt="asdas" class="features-img" width="80" height="80">
-                    <span class="title-text-card1">Customer</span>
-                    <span class="title-text-card1">Engagement</span>
-                    <br>
-                    <span class="main-text-card1">Convert customers into engaged advocates.</span>
-                    <span class="main-text-card1">Build and grow customer relationships with </span>
-                    <span class="main-text-card1">powerful planning tools.</span>
-                    <br>
-                </div>
-                <div class="card2">
-                    <img src="./img/card2.png" alt="asdas" class="features-img" width="80" height="80">
-                    <span class="title-text-card2">Support and self-</span>
-                    <span class="title-text-card2">service</span>
-                    <br>
-                    <span class="main-text-card2">Empower customers to help each other. </span>
-                    <span class="main-text-card2">Enable them to solve problems  </span>
-                    <span class="main-text-card2">independently with collective wisdom.</span>
-                    <br>
-                </div>
-                <div class="card3">
-                    <img src="./img/card3.png" alt="asdas" class="features-img" width="80" height="80">
-                    <span class="title-text-card3">Feedback and </span>
-                    <span class="title-text-card3">communication</span>
-                    <br>
-                    <span class="main-text-card3">Embrace the Voice of the Customer, collect</span>
-                    <span class="main-text-card3">actionable insights, and share product  </span>
-                    <span class="main-text-card3">updates.</span>
-                    <br>
-                </div>
-            </div>
+
+
+        <section class="video" id="video">
+            <img src="./img/Video.png" alt="video">
         </section>
+
+<!-- ==========Features========== -->
+        <section class="features" id="features">
+            <div class="features__title">
+                <h2 class="features__title-heading">Solution for thriving product<br>Communities</h2>
+            </div>
+
+
+            <ul class="features__list">
+                <li class="features__item">
+                    <img src="./img/card1.png" alt="Customer engagement icon" class="features__icon" width="80"
+                        height="80">
+                    <h3 class="features__item-title">
+                        <span class="features__item-title-line">Customer</span>
+                        <span class="features__item-title-line">Engagement</span>
+                    </h3>
+                    <p class="features__item-text">Convert customers into engaged advocates. Build and grow customer
+                        relationships with powerful planning tools.</p>
+                </li>
+
+
+                <li class="features__item">
+                    <img src="./img/card2.png" alt="Support and self-service icon" class="features__icon" width="80"
+                        height="80">
+                    <h3 class="features__item-title">
+                        <span class="features__item-title-line">Support and self-</span>
+                        <span class="features__item-title-line">service</span>
+                    </h3>
+                    <p class="features__item-text">Empower customers to help each other. Enable them to solve problems
+                        independently with collective wisdom.</p>
+                </li>
+
+
+                <li class="features__item">
+                    <img src="./img/card3.png" alt="Feedback and communication icon" class="features__icon" width="80"
+                        height="80">
+                    <h3 class="features__item-title">
+                        <span class="features__item-title-line">Feedback and</span>
+                        <span class="features__item-title-line">communication</span>
+                    </h3>
+                    <p class="features__item-text">Embrace the Voice of the Customer, collect actionable insights, and
+                        share product updates.</p>
+                </li>
+            </ul>
+        </section>
+<!-- ==========Features========== -->
         <section class="feature">
             <div class="feature-container feature-flex">
                 <div class="iphone">
-                    <img src="./img/iPhone.png" alt="iphone" width="412" height="596">
+                    <img src="./img/iPhone.png" alt="iphone" width="572" height="596">
                 </div>
                 <div class="text-feature">
                     <span class="title-text-feature1">The genius way to work</span>
                     <span class="title-text-feature2">better and smarter</span>
-                    <span class="title-text-feature3">Cally makes it easy to work smarter when you’re working solo. </span>
+                    <span class="title-text-feature3">Cally makes it easy to work smarter when you’re working solo.
+                    </span>
                     <span class="title-text-feature4">Meetings, sessions, and appointments become more efficient</span>
                     <span class="title-text-feature5">ways to achieve success and accomplish goals.</span>
                     <a href="#" class="feature-button">Explore platform</a>
                 </div>
             </div>
         </section>
-        <section class="plan">
+        
+        <section class="plan" id="plan">
             <div class="plan-container plan-flex">
                 <div class="plan-title">
                     <span class="plan-title1">Build the right plan for your team</span>
                     <span class="plan-title2">Start my free trial, no credit card required.</span>
                 </div>
                 <div class="plan-buttons">
-                        <a href="#" class="plan-buttons-hidden">Save 20% with annual plans</a>
-                        <a href="#" class="plan-buttons-data-1">Monthly</a>
-                        <a href="#" class="plan-buttons-data-2">Yearly</a>
-                        <a href="#" class="plan-buttons2">Save 20% with annual plans</a>
+                    <div class="plan-buttons_switcher">
+                        <button onclick="selectPeriod(event, 'monthly')" class="plan-buttons-data-1 tablinks active">Monthly</button>
+                        <button onclick="selectPeriod(event, 'yearly')" class="plan-buttons-data-2 tablinks">Yearly</button>
+                    </div>
                 </div>
-                <div class="plan-cards-container plan-cards-flex">
-                    <div class="plan-card1">
-                        <span class="plan-card1-title">Starter</span>
-                        <span class="plan-card1-main">When you need customization, </span>
-                        <span class="plan-card1-main1">integrations, and basic team features</span>
-                        <span class="plan-card1-price2"> <span class="plan-card1-price1">$9</span>/seat/mo</span>
-                        <a href="#" class="plan-card1-buttons">Try it free</a>
-                        <span class="card1-perk1 indit">Access Cally with web, iOS, and Android </span>
-                        <span class="card1-perk1-1">apps</span>
-                        <span class="card1-perk2">Active event types</span>
-                        <span class="card1-perk3">Send your invitee email reminders and </span>
-                        <span class="card1-perk3-3">follow-ups</span>
-                        <span class="card1-perk4">Customize email notifications and </span>
-                        <span class="card1-perk4-4">follow-ups</span>
+                <div id="monthly" class="plan-cards-container tabcontent plan-cards-flex">
+                    <div class="plan-card">
+                        <div class="plan-card--title">Starter</div>
+                        <div class="plan-card--subtitle">When you need customization, integrations, and basic team features</div>
+                        <div class="plan-card--price">
+                            <span>$9</span>
+                            /seat/mo
+                        </div>
+                        <div class="plan-card--button">
+                            Try it free
+                        </div>
+
+                        <div class="plan-card--list">
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Access Cally with web, iOS, and Android apps
+                                </div>
+                            </div>
+
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Active event types
+                                </div>
+                            </div>
+
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                   Send your invitee email reminders and follow-ups
+                                </div>
+                            </div>
+
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Customize email notifications and reminders
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="plan-card plan-card--active">
+                        <div class="plan-card--title">Plus</div>
+                        <div class="plan-card--subtitle">When you need customization, integrations, and basic team features</div>
+                        <div class="plan-card--price">
+                            <span>$19</span>
+                            /seat/mo
+                        </div>
+                        <div class="plan-card--button">
+                            Try it free
+                        </div>
+
+                         <div class="plan-card--list">
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text plan-card--list-item-text--active">
+                                    Everything in Starter, and:
+                                </div>
+                            </div>
+
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Connect to Google, Office 365, Outlook, and iCloud calendars
+                                </div>
+                            </div>
+
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Create unlimited one-on-one events
+                                </div>
+                            </div>
+
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Automated event notifications
+                                </div>
+                            </div>
+                            
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Get meeting notifications via text
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="plan-card">
+                        <div class="plan-card--title">Pro</div>
+                        <div class="plan-card--subtitle">When you need customization, integrations, and basic team features</div>
+                        <div class="plan-card--price">
+                            <span>$39</span>
+                            /seat/mo
+                        </div>
+                        <div class="plan-card--button">
+                            Try it free
+                        </div>
+
+                         <div class="plan-card--list">
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text plan-card--list-item-text--active">
+                                    Everything in Plus, and:
+                                </div>
+                            </div>
+
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Create automated workflows
+                                </div>
+                            </div>
+
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Add links to your confirmation pages
+                                </div>
+                            </div>
+
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Redirect your invitees
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="yearly" style="display:none;" class="plan-cards-container tabcontent plan-cards-flex" >
+                    <div class="plan-card">
+                        <div class="plan-card--title">Starter</div>
+                        <div class="plan-card--subtitle">Tab 2 first card subtitle</div>
+                        <div class="plan-card--price">
+                            <span>$39</span>
+                            /seat/mo
+                        </div>
+                        <div class="plan-card--button">
+                            Try it free
+                        </div>
+
+                        <div class="plan-card--list">
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Access Cally with web, iOS, and Android apps
+                                </div>
+                            </div>
+
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Active event types
+                                </div>
+                            </div>
+
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                   Send your invitee email reminders and follow-ups
+                                </div>
+                            </div>
+
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Customize email notifications and reminders
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="plan-card plan-card--active">
+                        <div class="plan-card--title">Plus</div>
+                        <div class="plan-card--subtitle">first tab second card subtitle</div>
+                        <div class="plan-card--price">
+                            <span>$79</span>
+                            /seat/mo
+                        </div>
+                        <div class="plan-card--button">
+                            Try it free
+                        </div>
+
+                         <div class="plan-card--list">
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text plan-card--list-item-text--active">
+                                    Everything in Starter, and:
+                                </div>
+                            </div>
+
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Connect to Google, Office 365, Outlook, and iCloud calendars
+                                </div>
+                            </div>
+
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Create unlimited one-on-one events
+                                </div>
+                            </div>
+
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Automated event notifications
+                                </div>
+                            </div>
+                            
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Get meeting notifications via text
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="plan-card">
+                        <div class="plan-card--title">Pro</div>
+                        <div class="plan-card--subtitle">Second tab second card subtitle</div>
+                        <div class="plan-card--price">
+                            <span>$109</span>
+                            /seat/mo
+                        </div>
+                        <div class="plan-card--button">
+                            Try it free
+                        </div>
+
+                         <div class="plan-card--list">
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text plan-card--list-item-text--active">
+                                    Everything in Plus, and:
+                                </div>
+                            </div>
+
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Create automated workflows
+                                </div>
+                            </div>
+
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Add links to your confirmation pages
+                                </div>
+                            </div>
+
+                            <div class="plan-card--list_item">
+                                <img src="img/check-mark.svg" alt="">
+                                <div class="plan-card--list-item-text">
+                                    Redirect your invitees
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        
+        <div class="container">
+            <div class="footer-upper">
+            <div class="footer-upper_card">
+                <div class="footer-upper_card--title">Explore other solutions for your business</div>
+                <div class="footer-upper-card-video">
+                    <img src="img/footer phone img.png" alt="">
+                </div>
+            </div>
+
+            <div class="footer-upper_menu">
+                <div class="footer-upper_menu-list">
+                    <div class="footer-upper_menu-list--title">About</div>
+
+                    <div class="footer-upper_menu-list--items">
+                        <div class="footer-upper_menu-list--items-item">About Cally</div>
+
+                        <div class="footer-upper_menu-list--items-item">Contact Sales</div>
+
+                        <div class="footer-upper_menu-list--items-item">Newsroom</div>
+
+                        <div class="footer-upper_menu-list--items-item">Security</div>
+                    </div>
+                </div>
+                <div class="footer-upper_menu-list">
+                    <div class="footer-upper_menu-list--title">Solutions</div>
+
+                    <div class="footer-upper_menu-list--items">
+                        <div class="footer-upper_menu-list--items-item">Calendar</div>
+
+                        <div class="footer-upper_menu-list--items-item">Task Manager</div>
+
+                        <div class="footer-upper_menu-list--items-item">NFT Marketplace</div>
+
+                        <div class="footer-upper_menu-list--items-item">Dashboard</div>
+                    </div>
+                </div>
+                <div class="footer-upper_menu-list">
+                    <div class="footer-upper_menu-list--title">Popular Freatures</div>
+
+                    <div class="footer-upper_menu-list--items">
+                        <div class="footer-upper_menu-list--items-item">Badasdsa</div>
+
+                        <div class="footer-upper_menu-list--items-item">Task Manager</div>
+
+                        <div class="footer-upper_menu-list--items-item">NFT Marketplace</div>
+
+                        <div class="footer-upper_menu-list--items-item">Dashboard</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+
+            <div class="footer-bottom--menu">
+                <div class="footer-bottom--menu-item">Terms</div>
+                <div class="footer-bottom--menu-item">Privacy</div>
+                <div class="footer-bottom--menu-item">Refunds</div>
+                <div class="footer-bottom--menu-item">Feedback</div>
+            </div>
+
+            <div class="footer-bottom--menu">
+                <div class="footer-bottom--menu-item">
+                    <a href="#">
+                        <img src="img/github icon.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer-bottom--menu-item">
+                   <a href="#">
+                     <img src="img/figma icon.svg" alt="">
+                   </a>
+                </div>
+            </div>
+        </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
