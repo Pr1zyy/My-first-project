@@ -90,10 +90,25 @@ a {
     font-weight: 500;
 }
 
-.group {
+.header-app-bar {
     display: flex;
     align-items: center;
     gap: 15px
+}
+
+.header-app-bar__btn {
+    transition-duration: 0.35s;
+    border-radius: 10px;
+}
+
+.header-app-bar__icon {
+    width: 48px;
+    height: 48px;
+}
+
+.header-app-bar__btn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    
 }
 
 .get-started:hover {
@@ -163,6 +178,8 @@ a {
 
 .cross {
     background: transparent;
+    width: 52px;
+    height: 40px;
 }
 /* Alert */
 
@@ -353,7 +370,7 @@ a {
     margin-top: 60px;
 }
 
-.title-text-feature1, .title-text-feature2, .title-text-feature3, .title-text-feature4, .title-text-feature5, .feature-button {
+.feature-text-title--1, .feature-text-title--2, .feature-text-title--3, .feature-text-title--4, .feature-text-title--5, .feature-button {
     display: block;
     margin-left: 80px;
 }
@@ -362,32 +379,32 @@ a {
     display: flex;
 }
 
-.title-text-feature1 {
+.feature-text-title--1 {
     margin-top: 150px;
 }
 
-.title-text-feature1 {
+.feature-text-title--1 {
     font-weight: 700;
     font-size: 44px;
     letter-spacing: 0px;
 }
 
-.title-text-feature2 {
+.feature-text-title--2 {
     font-weight: 700;
     font-size: 44px;
     letter-spacing: 0px;
     color: var(--text);
 }
 
-.title-text-feature3 {
+.feature-text-title--3 {
     margin-top: 10px;
 }
 
-.title-text-feature4 {
+.feature-text-title--4 {
     margin-top: 12px;
 }
 
-.title-text-feature3, .title-text-feature4, .title-text-feature5 {
+.feature-text-title--3, .feature-text-title--4, .feature-text-title--5 {
     font-weight: 400;
     size: 18px;
     letter-spacing: 0;
@@ -402,7 +419,6 @@ a {
     border-radius: 30px;
     cursor: pointer;
 }
-
 
 .iphone {
     width: 572px;

@@ -17,11 +17,7 @@ function selectPeriod(evt, name) {
 function hideAlert() {
   const alertEl = document.getElementById('alert');
   if (!alertEl) return;
-
-  // запускаем анимацию
   alertEl.classList.add('closing');
-
-  // обработчик окончания перехода — когда opacity закончилось, делаем visibility:hidden
   const onTransitionEnd = (e) => {
     if (e.propertyName === 'opacity') {
       alertEl.style.visibility = 'hidden';
@@ -29,13 +25,10 @@ function hideAlert() {
     }
   };
   alertEl.addEventListener('transitionend', onTransitionEnd);
-
-  // запасной таймаут на случай, если transitionend не сработает (например, прерывание)
   setTimeout(() => {
-    // если уже скрыто — ничего страшного
     if (getComputedStyle(alertEl).opacity === '0') {
       alertEl.style.visibility = 'hidden';
       alertEl.removeEventListener('transitionend', onTransitionEnd);
     }
-  }, 500); // чуть больше времени анимации
+  }, 500);
 }
