@@ -418,6 +418,11 @@ a {
     padding: 12px 24px;
     border-radius: 30px;
     cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.feature-button:hover {
+    background-color: #5558f1;
 }
 
 .iphone {
@@ -509,6 +514,7 @@ button {
     padding: 8px 59px;
     border-radius: 0px 10px 10px 0px;
     font-weight: 700;
+    border: 1px solid #E0E7FF;
 }
 
 
@@ -573,6 +579,11 @@ button {
     justify-content: center;
     align-items: center;
     margin: 12px 0;
+    transition-duration: 0.3s;
+}
+
+.plan-card--button:hover {
+    background-color: #5558f1;
 }
 
 .plan-card--list {
